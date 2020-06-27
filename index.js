@@ -50,7 +50,7 @@ const showMovie = (movieDetail) =>{
 
 const onMovieSelect = async (movie, column) =>{
     const div = document.createElement("div");
-    const response = await axios.get("http://www.omdbapi.com/", {
+    const response = await axios.get("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/", {
         params: {
             apikey: "a60164ca",
             i: movie.imdbID
