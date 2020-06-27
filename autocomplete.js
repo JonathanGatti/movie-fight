@@ -18,7 +18,7 @@ const createAutocomplete= ({root, column}) =>{
     const dropdown = root.querySelector(".dropdown")
 
 const fetchData =  async  searchTerm =>{
-    const response = await  axios.get("http://www.omdbapi.com/", {
+    const response = await  axios.get("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/", {
         params : {
             apikey: 'a60164ca',
             s : searchTerm
