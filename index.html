@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <title>Movie Fight</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <h1>Movie Fight</h1>
+            </div>
+            </div>
+          </nav>
+    </header> 
+        <div class="container">   
+            <div class="columns">
+                <div class="column">
+                    <div id="left-column"></div>
+                </div>          
+                <div class="column">
+                    <div id="right-column"></div>
+                </div>
+            </div> 
+            <div class="column is-half notification is-dark tutorial">
+                <h1 class="title">Search For a Movie on Both Sides</h1>
+                <p class="subtitle">We will tell you which is best!</p>
+              </div>  
+        </div> 
+        <footer>
+            <div class="column " id="refresh"></div>
+            </div>
+        </footer>
+    <script src="autocomplete.js"></script>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
